@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/tablet.css">
+        <link rel="stylesheet" href="css/mobile.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <title>Portfolio</title>
+        <link rel="icon" href="img/10856864.png" type="image/x-icon">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h2>Portfolio</h2>
+                <nav>
+                    <div class="burger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <ul class="menu">
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#works" class="nav-link">Works</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                    <button onclick="toggleTheme()"></button>
+                </nav>
+            </header>
+            <main>
+                <div class="home block" id="home">
+                    <div class="home_text">
+                        <h1>Frontend
+                            Developer.</h1>
+                        <h2>I'm Dima Kerzyuk</h2>
+                        <p>A Front-End Web Developer passionate about creating interactive applications and experiences on the web.</p>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <img src="img/home.jpg" alt="">
+                </div>
+                <div class="about block" id="about">
+                    <div class="about_text">
+                        <p class="abouth2">SOME INFO</p>
+                        <h2>ABOUT ME</h2>
+                        <p class="text">Hello, my name is Dima, I'm 16 years old. I am web developer from Ukraine (Ivano-Frankivsk). I have been learning programming for 4 years in <a href="https://www.instagram.com/if_kompschool/" target="_blank" rel="noopener noreferrer" class="shkm">ШКМ.</a> I like to solve complex problems and puzzles, and I am also interested in computer gaming. I like to do sports and find new friends. Also, I like to spend a lot of time outside and travel.</p>
+                        <button class="abouttoggle">Read all</button>
+                    </div>
+                </div>
+                <div class="slider block" id="works">
+                    <div class="project">
+                        <p class="projecth2">TAKE A LOOK AT MY</p>
+                        <h2>PROJECTS</h2>
+                    </div>
+                    <div class="slider_1">
+                        <div class="slides-container">
+                            <div class="slide">
+                                <img src="img/project1.png" alt="Slide 1" id="img" class="img">
+                                <div class="slide_text">
+                                    <div class="slider_info">
+                                        <h3>Ecology</h3>
+                                        <a href="">Live</a>
+                                    </div>
+                                    <h4>Technologies Used: html; css.</h4>
+                                    <ul>
+                                        <li>Website about ecologie.</li>
+                                        <li>The essence of this project is to convey to people how important it is to observe nature.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <img src="img/project2.png" alt="Slide 2" id="img" class="img">
+                                <div class="slide_text">
+                                    <div class="slider_info">
+                                        <h3>Watch Shop</h3>
+                                        <a href="">Live</a>
+                                    </div>
+                                    <h4>Technologies Used: html; css.</h4>
+                                    <ul>
+                                        <li>Website was created for a watch store</li>
+                                        <li>The essence of this project is to make a copy of a real watch website</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <img src="img/project5.png" alt="Slide 3" id="img" class="img">
+                                <div class="slide_text">
+                                    <div class="slider_info">
+                                        <h3>MyClass</h3>
+                                        <a href="">Live</a>
+                                    </div>
+                                    <h4>Technologies Used: html; css; js.</h4>
+                                    <ul>
+                                        <li>Website with programming courses</li>
+                                        <li>There you can choose the programming courses you need and get information about them</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prev-btn">&#10094;</div>
+                        <div class="next-btn">&#10095;</div>
+                    </div>
+                </div>   
+                <div class="contact block" id="contact">
+                    <div class="contact_text">
+                        <p class="contacth2">SAY HELLO</p>
+                        <h2>LET`S TALK</h2>
+                    </div>
+                    <div class="contact_main">
+                        <div class="contact_info">
+                            <a href="mailto:kerzyukd@gmail.com" class="gmail" target="_blank">Gmail</a>
+                            <a href="https://www.instagram.com/pupssao/" class="instagram" target="_blank">Instagram</a>
+                            <a href="https://t.me/ppsaoa" class="telegram" target="_blank">Telegram</a>
+                        </div>
+                        <div class="contact_form">
+                            <form id="contact-form">
+                                <div class="contactinfo">
+                                    <input type="text" name="name" required placeholder="Your name *">
+                                    <input type="email" name="email" required placeholder="Your Email *">
+                                </div>
+                                <textarea name="message" required placeholder="Your Message *"></textarea>                        
+                                <button type="submit" onclick="sendEmail()">Send</button>
+                            </form> 
+                        </div>  
+                    </div>                        
+                </div>
+            </main>
+            <aside class="cookies-agreement">
+                <p>While you are on our site and reading news, we use your cookies. We really hope you don't mind.</p>
+                <button class="button" type="button">Okay, continue</button>
+            </aside>
+            <button class="up-button" type="button">
+                ↑ 
+              </button>
+            <footer class="block" id="contact">
+                <p>© Dima Kerzyuk 2023</p>
+            </footer>
+        </div>
+        <script src="js/js.js"></script>
+    </body>
+</html>
