@@ -80,6 +80,7 @@
   }
   .light-theme .up-button {
     background-color: #B8B5FF;
+    color: black;
   }
   .light-theme .home_text a:hover {
     color: #8080ff;
@@ -490,6 +491,9 @@
   }
   .abouttoggle {
     display: none;
+  }
+  .up-button:hover {
+    color: #66347F;
   }
   .up-button {
     position: fixed;

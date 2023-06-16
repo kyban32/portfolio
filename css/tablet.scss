@@ -83,6 +83,7 @@
     .light-theme{
         .up-button{
             background-color: #B8B5FF;
+            color: black;
         }
         .home_text a{
             background: #E3DFFD;
@@ -509,6 +510,9 @@
       .abouttoggle{
         display: none;
       }   
+      .up-button:hover{
+        color: #66347F;
+      }
       .up-button{
         position: fixed;
         width: 64px;
@@ -521,13 +525,13 @@
         border-radius: 50%;
         cursor: pointer;
         display: none;
-        color: black;
+        color: white;
         background-color: #3A4750;
       }    
       .up-button.shown{
         display: block;
         position: fixed;
-        left: 95%;
+        left: 90%;
       }
       .active {
         background-color: #66347F;

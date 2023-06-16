@@ -19,7 +19,7 @@ function scrollFunc() {
 }
 
 function UpButton() {
-  if (window.pageYOffset > 2000) {
+  if (document.documentElement.scrollTop > 200) {
     upButton.classList.add('shown');
   } else {
     upButton.classList.remove('shown');
